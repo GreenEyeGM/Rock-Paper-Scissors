@@ -5,25 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script rel="javascript.js"></script>
+    <script src="script.js"></script>
     <title>Rock Paper Scissors</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+    </style>
 </head>
 
 <body>
-    <nav class="header-nav-nar">
+    <nav class="header-nav-bar">
         <header class="header">
+            <text style="font-size:22px">SYSTEM ONLINE</text> 
+            <text style="font-size:18px">RPS_PROTOCOL v1.0</text>
+            <text style="font-size:14px">Opponent: AI_CORE | Connection: SECURE</text>
+            <hr>
         </header>
     </nav>
     <section class ="duel-arena-box">
         <div class = "duel-arena">
+            <div class = "player-box">
+                <text style="color:#7eff9f">[YOU]</text>
+                <div class ="player-sub">
+                    <text id = "player-choice">?</text>
+                    <text id = "player-score">0</text>
+                </div>
+            </div>
+            <text style="color:#a1ffb8">VS</text>
+            <div class = "ai-box">
+                <text style="color:#50cc73">[AI_CORE]</text>
+                <div class ="ai-sub">
+                    <text id = "ai-choice">?</text>
+                    <text id = "ai-score">2</text>
+                </div>
+            </div>
             
         </div>
     </section>
     <section class = "action-buttons-box">
         <div class = "action-buttons">
-            <button id="action1">Rock</button>
-            <button id="action2">Paper</button>
-            <button id="action3">Scissors</button>
+            <button id="action1">ROCK</button>
+            <button id="action2">PAPER</button>
+            <button id="action3">SCISSORS</button>
         </div>
     </section>
     <section class = "system-log-box">
